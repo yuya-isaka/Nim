@@ -54,7 +54,7 @@ pkg1 "delaunay"
 pkg1 "docopt"
 pkg1 "easygl", "nim c -o:egl -r src/easygl.nim", "https://github.com/jackmott/easygl"
 pkg1 "elvis"
-# pkg1 "fidget" # pending https://github.com/treeform/fidget/issues/133
+pkg1 "fidget", useHead = false
 pkg1 "fragments", "nim c -r fragments/dsl.nim"
 pkg1 "fusion"
 pkg1 "gara"
@@ -118,7 +118,7 @@ pkg2 "numericalnim", "nim c -r tests/test_integrate.nim"
 pkg2 "ormin", "nim c -o:orminn ormin.nim"
 pkg2 "parsetoml"
 pkg2 "patty"
-pkg2 "pixie"
+pkg2 "pixie", useHead = false
 pkg2 "plotly", "nim c examples/all.nim"
 pkg2 "pnm"
 pkg2 "polypbren"
