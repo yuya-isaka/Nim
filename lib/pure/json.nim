@@ -963,7 +963,7 @@ when defined(js):
       result[$nimProperty] = nimValue.convertObject()
       asm "}}"
     of JInt:
-      result = newJInt(cast[int](x))
+      result = newJInt(cast[int64](x))
     of JFloat:
       result = newJFloat(cast[float](x))
     of JString:
